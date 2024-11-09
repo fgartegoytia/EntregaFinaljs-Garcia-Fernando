@@ -6,7 +6,7 @@ renderBotonCarrito();
 
 async function cargarProductos() {
     try {
-        const response = await fetch("productos.json"); 
+        const response = await fetch("../data/productos.json"); 
         const productos = await response.json(); 
         guardarProductosLS(productos); 
         renderProductos(); 
